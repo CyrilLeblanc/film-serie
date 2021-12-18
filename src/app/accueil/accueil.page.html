@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Accueil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="filter"></ion-searchbar>
+  <ion-button expand="full" size="large" (click)="clickFilm()">Film</ion-button>
+  <ion-button expand="block" size="large" (click)="clickSerie()">Série</ion-button>
+  <ion-button (click)="displayModal()">diplayModal</ion-button>
+</ion-content>

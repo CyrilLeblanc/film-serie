@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button defaultHref="/search" slot="start"></ion-back-button>
+    <ion-title>{{data.Title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="{{data.Poster}}"> </ion-img>
+      <ion-card-title>{{data.Title}}</ion-card-title>
+      <ion-card-subtitle>
+        <small>{{data.Year}}</small>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{data.Plot}}</p>
+      <ion-list>
+        <ion-item>
+          <ion-label> Genre : </ion-label>
+          {{data.Genre}}
+        </ion-item>
+        <ion-item>
+          <ion-label>Acteurs :</ion-label>
+          {{data.Actors}}
+        </ion-item>
+        <ion-item>
+          <ion-label>Note :</ion-label>
+          {{data.Rated}}
+        </ion-item>
+        <ion-item>
+          <ion-label> Durée : </ion-label>
+          {{data.Runtime}}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
